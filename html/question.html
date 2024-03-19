@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+
+
+</style>
+</head>
+<body>
+<h1>MERN EXAM</h1>
+<h4>Solve the following Mcqs:</h4>
+How many keyword in c language?<br>
+<input type="text"  id="question1"/><br>
+What is your name?<br>
+<input type="text" id="question2"/><br>
+What is your age?<br>
+<input type="text" id="question3"/><br>
+<input type="button" value="check" onclick="check()">
+<h3 id="status"></h3>
+
+<script>
+function check()
+{
+mark=0;
+question1=document.getElementById("question1").value;
+question2=document.getElementById("question2").value;
+question3=document.getElementById("question3").value;
+	if(question1=="36")
+	{
+	mark+=10;
+	}
+	
+	if(question2=="mohit")
+	{
+	mark+=10;
+	}
+	
+	if(question3=="20")
+	{
+	mark+=10;
+	}
+document.getElementById("status").innerHTML="Your Score:"+mark*100/30;
+}
+</script>
+</body>
+</html>

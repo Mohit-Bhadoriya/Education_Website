@@ -1,0 +1,54 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+.container{
+background-color:orange;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+#slide{
+width:650px;
+height:450px;
+background-image:url("img/pic-3.jpg");
+background-size:800px;
+}
+#btn{
+width:35px;
+height:35px;
+background-color:black;
+color:white;
+position:absolute;
+right:445px;
+top:132px;
+
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<div id="slide"> </div>
+</div>
+<button type="btn" id="btn">-</button>
+<script>
+$(document).ready(function(){
+cur=0;
+	function loadImage(){
+	cur++;
+	$("#slide").css("background-image","url(img/pic"+cur+".jpg)");
+	}
+loadImage();
+setTimeout(loadImage,2000);
+setTimeout(loadImage,4000);
+});
+$("#btn").click(function(){
+$(this).css("display","none");
+$("#slide").css("display","none");
+});
+</script>
+</body>
+</html>

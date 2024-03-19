@@ -1,0 +1,147 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+.base{
+position:absolute;
+right:100px;
+margin-bottom:10px;
+}
+#contact{
+background-color:grey;
+color:white;
+
+
+
+}
+</style>
+</head>
+<body>
+<div class="container-fluid bg-info ">
+<ul class="nav justify-content-end">
+<li class="nav-item"><a href="#" class="nav-link disabled">HOME</a></li>
+
+<li class="dropdown">
+<a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">CAREERS</a>
+	<ul class="dropdown-menu">
+		<li><a href="#"class="dropdown-item" >TEST</a></li>
+		<li><a href="#"class="dropdown-item">ODI</a></li>
+		<li><a href="#"class="dropdown-item">T-20</a></li>
+		<li><a href="#"class="dropdown-item">IPL</a></li>
+	</ul>
+</li>
+<li class="nav-item"><a href="#about" class="nav-link ">ABOUT</a></li>
+<li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+
+</ul>
+</div>
+<!-- Carousel -->
+<div id="mahi" class="carousel slide mt-1  container" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mahi" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#mahi" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#mahi" data-bs-slide-to="2"></button>
+  </div>
+  <!-- Indicators/dots -->
+	<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2021/07/07/61b31862af46bd9358dec0c8f389e820_original.jpg" class="d-block" style="width:100%" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://assets.sentinelassam.com/h-upload/2020/11/18/174149-msd.webp?w=400&dpr=2.6" class="d-block" style="width:100%" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://wallpaperaccess.com/full/1281414.jpg"  class="d-block" style="width:100%" height="500">
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+
+<button class="carousel-control-prev" type="button" data-bs-target="#mahi" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mahi" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark"></span>
+  </button>
+</div>
+<div class="container-fluid mt-1">
+<div class="row">
+<div class="col-6">
+<img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSbuvhH16cizf4tFpAK_H7YRWyv93yEueWD65fCu81jK-fe33IARBTpxpkq1CCm" width="700px" height="600px"/>
+</div>
+<div class="col-6 " id="about">
+<h3><u>MS DHONI:</u></h3>
+<p>Mahendra Singh Dhoni (born 7 July 1981) is an Indian professional cricketer who was captain of the Indian national cricket team in limited-overs formats from 2007 to 2017 and in Test cricket from 2008 to 2014. He is a right-handed wicket-keeper batsman.[3] He led the team to three ICC titles (2007 ICC World Twenty20, 2011 ICC Cricket World Cup and 2013 ICC Champions Trophy).[4][5] He has won several awards and accolades in his career.[6][7][8][9]
+
+In Indian domestic cricket he played for Bihar and Jharkhand Cricket team. As of 2022, he is the captain of Chennai Super Kings (CSK) in the Indian Premier League. He was captain when CSK won the 2010, 2011, 2018 and 2021 editions of IPL league.
+
+Dhoni made his ODI debut on 23 December 2004 against Bangladesh in Chittagong, and played his first Test a year later against Sri Lanka. In 2007, he took over the ODI captaincy from Rahul Dravid. In test cricket his captaincy record was mixed, successfully leading India to series win against New Zealand (in 2009) and the Border-Gavaskar Trophy (home series in 2010 and 2013) against Australia while losing to Sri Lanka, Australia, England, and South Africa by big margins in away conditions.[citation needed]
+
+He announced his retirement from Test format on 30 December 2014,[10] and stepped down as captain of T20s and ODIs in 2017. On 15 August 2020, Dhoni retired from all formats of international cricket.[11][12][13] He continues to play in the IPL.</p>
+<p>The Indian ODI team in the early 2000s saw Rahul Dravid as the wicket-keeper to ensure that the wicket-keeper spot didn't lack in batting talent.[54] The team also saw the entry of wicket-keeper/batsmen from the junior ranks, with talents like Parthiv Patel and Dinesh Karthik (both India U-19 captains) named in the Test squads.[54] With Dhoni making a mark in the India A squad, he was picked in the ODI squad for the Bangladesh tour in 2004/05.[55] Dhoni did not have a great start to his ODI career, getting run out for a duck on debut.[56] In spite of an average series against Bangladesh, Dhoni was picked for the Pakistan ODI series.[57]</p>
+
+
+</div>
+
+</div>
+</div>
+
+<button type="button" class="btn btn-primary base" data-bs-toggle="modal" data-bs-target="#myModal">
+  KNOWN MORE
+</button>
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Fill this form</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form action="/action_page.php">
+  <div class="mb-3 mt-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  </div>
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+  </div>
+  <div class="form-check mb-3">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<div class="container-fluid mt-5" id="contact">
+<div class="row">
+<div class="col-3" >Cricketer MS Dhoni Managment Coordinates.<br> 
+Office address: Rhiti Sports Management(P) Ltd, 7,<br> 
+Mani Prabha Farm,Sector D, Ram Mandir Road, <br>
+Vasant Kunj, New Delhi 110070, India</div>
+
+
+<div class="col-4">Phone number: + 91-11-66465800.<br> 
+MS Dhoni Manager Phone Number: + 91-22-67254873 (Arun Pandey)</div>
+
+
+<div class="col-5"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.682189032204!2d77.14984201489067!3d28.519208082462704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1e8394a4ff7f%3A0xf0d542bcf2160422!2sRhiti%20Sports!5e0!3m2!1sen!2sin!4v1648878594104!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div>
+</div>
+</body>
+</html>

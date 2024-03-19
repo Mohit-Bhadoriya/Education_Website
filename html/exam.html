@@ -1,0 +1,82 @@
+<html>
+<body>
+Question:<span id="question">abc</span><br>
+<input type="radio" name="change"><span id="opt1">1</span><br>
+<input type="radio" name="change"><span id="opt2">2</span><br>
+<input type="radio" name="change"><span id="opt3">3</span><br>
+<input type="radio" name="change"><span id="opt4">4</span><br>
+<button onclick="Prev()" id="prev">prev</button>
+<button onclick="Next()" id="next">next</button>
+<script>
+question=[{"q":"MS-Word is an example of _____",
+		   "opt1":"An operating system",
+		   "opt2":"A processing device",
+		   "opt3":"Application software",
+		   "opt4":"An input device"
+		   },
+		 {
+		 "q":"Ctrl, Shift and Alt are called .......... keys",
+		 "opt1":"modifier",
+		 "opt2":"function",
+		 "opt3":"alphanumeric",
+		 "opt4":"adjustment"
+		 },
+		 
+		 {
+		 "q":"A computer cannot 'boot' if it does not have the _____",
+		 "opt1":"Compiler",
+		 "opt2":"Loader",
+		 "opt3":"Operating system",
+		 "opt4":"Assembler"
+		 }
+        ];
+qno=0;
+function show()
+	{
+	document.getElementById("question").innerHTML=question[qno].q;
+	document.getElementById("option1").innerHTML=question[qno].opt1;
+	document.getElementById("option2").innerHTML=question[qno].opt2;
+	document.getElementById("option3").innerHTML=question[qno].opt3;
+	document.getElementById("option4").innerHTML=question[qno].opt4;
+	}
+show();
+function Next()
+	{
+changer();
+	if(qno<2){
+			 qno++;
+			 show();
+		document.getElementById("prev").disabled=false;
+			 }
+	else{
+		document.getElementById("next").disabled=true;		
+		}
+	}
+
+function Prev()
+	{
+ changer();
+	if(qno>0){
+
+			 qno--;
+			 show();
+		document.getElementById("next").disabled=false;
+			 }
+	else{
+		document.getElementById("prev").disabled=true;
+	    }
+	}
+function changer()
+{
+document.getElementById("opt1").checked=false;
+document.getElementById("opt2").checked=false;
+document.getElementById("opt3").checked=false;
+document.getElementById("opt4").checked=false;
+}
+
+
+
+
+</script>
+</body>
+</html>

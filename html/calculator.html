@@ -1,0 +1,95 @@
+<html>
+<head>
+<style>
+body{
+		background-color:orange;
+	}
+	
+#result {
+			background-color:white;
+			width:250px;
+			height:40px;
+			margin:10px;
+			text-align:center;
+		}
+		
+.btn{
+background-color:white;
+height:40px;
+width:50px;
+cursor:pointer;
+display:inline-block;
+margin:2px;
+text-align:center;
+padding:2.7px;
+}
+
+.container{
+width:250px;
+margin:10px;
+}
+
+.main{
+		background-color:pink;
+		width:30%;
+		height:50%;
+		position:absolute;
+		top:20%;
+		right:40%;
+		
+
+    }
+.reset {
+		background-color:red;
+		width:250px;
+		height:30px;
+		margin:10px;
+}
+</style>
+</head>
+<body>
+<div class="Main">
+<div id="result" ></div>
+<div class="container">
+		<div class="btn" onclick="show(1)">1</div>
+		<div class="btn" onclick="show(2)">2</div>
+		<div class="btn" onclick="show(3)">3</div>
+		<div class="btn" onclick="show('+')">+</div>
+		<div class="btn" onclick="show(4)">4</div>
+		<div class="btn" onclick="show(5)">5</div>
+		<div class="btn" onclick="show(6)">6</div>
+		<div class="btn" onclick="show('-')">-</div>
+		<div class="btn" onclick="show(7)">7</div>
+		<div class="btn" onclick="show(8)">8</div>
+		<div class="btn" onclick="show(9)">9</div>
+		<div class="btn" onclick="show('*')">*</div>
+		<div class="btn" onclick="show('/')">/</div>
+		<div class="btn" onclick="show(0)">0</div>
+		<div class="btn" onclick="show('.')">.</div>
+		<div class="btn" onclick="show('=')">=</div>
+</div>
+<input type="button" value="Clear All" onclick="reset()" class="reset">
+
+</div>
+
+<script>
+function show(a)
+{
+	if(a=='=')
+		{
+		document.getElementById("result").innerHTML=eval(document.getElementById("result").innerHTML);
+		}
+	else
+		{
+		document.getElementById("result").innerHTML+=a;
+		}
+}
+function reset()
+		{
+		document.getElementById("result").innerHTML="";
+		}
+		
+
+</script>
+</body>
+</html>

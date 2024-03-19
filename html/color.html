@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+body{
+background-color:orange;
+}
+.con{
+background-color:pink;
+width:300px;
+height:200px;
+position:absolute;
+top:30%;
+right:40%;
+}
+
+#red {
+background-color:red;
+width:60px;
+height:40px;
+text-align:center;
+margin:10px;
+padding-top:10px;
+}
+
+#blue {
+background-color:blue;
+width:60px;
+height:40px;
+position:absolute;
+top:70px;
+right:90px;
+padding-top:10px;
+text-align:center;
+}
+
+#main {
+background-color:white;
+width:200px;
+height:50px;
+text-align:center;
+margin:10px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="con">
+<div id="main">I am </div>
+<div id="red" onclick="red()">Red</div>
+<div id="blue" onclick="blue()">Blue</div>
+</div>
+<script>
+function red()
+{
+document.getElementById("main").innerHTML="I am Red";
+document.getElementById("main").style.color="red";
+document.getElementById("main").style.fontSize="30px";
+}
+function blue()
+{
+document.getElementById("main").innerHTML="I am Blue";
+document.getElementById("main").style.color="blue";
+document.getElementById("main").style.fontSize="30px";
+}
+
+
+
+</script>
+</body>
+</html>

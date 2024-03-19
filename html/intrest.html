@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+body{
+	 background-color:#ffecb3;
+    }
+#amount,#time,#rate{
+					background-color:skyblue;
+					height:40px;
+				   }
+
+.edit {
+	   background-color:pink;
+	   width:150px;
+	   height:10px;
+	   text-align:center;
+	   padding:10px;
+	   margin:10px;
+      }
+
+.center{
+	    background-color:orange;
+        width:500px;
+		height:400px;
+		left:0px;
+		right:0px;
+		margin:0 auto;
+       }
+
+.call{
+	  background-color:black;
+	  color:white;
+	  width:100px;
+	  height:30px;
+	  cursor:pointer;
+     }
+</style>
+</head>
+<body>
+<table class="center">
+<tr><td class="edit">Enter a Amount</td><td><input type="text" id="amount"></td>
+</tr><br><br>
+<tr><td class="edit">Time Period</td><td><input type="text" id="time"><td>
+</tr><br><br>
+<tr><td class="edit">Rate of Intrest</td><td><input type="text" id="rate"></td>
+</tr><br><br>
+<tr><td></td><td><button onclick="calculate()" class="call">Calculate</button></td></tr><br><br>
+<tr><td><h3 id="status"></h3></td></tr>
+</table>
+<script>
+function calculate()
+{
+amount=document.getElementById("amount").value;
+time=document.getElementById("time").value;
+rate=document.getElementById("rate").value;
+document.getElementById("status").innerHTML="Your Total Intrest:"
++(amount*time*rate)/100;
+}
+</script>
+</body>
+</html>
+
